@@ -29,6 +29,21 @@ __license__ = "mit"
 
 _logger = logging.getLogger(__name__)
 
+
+def fib(n):
+    """
+    Fibonacci example function
+
+    :param n: integer
+    :return: n-th Fibonacci number
+    """
+    assert n > 0
+    a, b = 1, 1
+    for i in range(n-1):
+        a, b = b, a+b
+    return a
+
+
 import os
 from .run import repl, run_program
 from .env_dictimpl import Env
