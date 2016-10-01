@@ -28,10 +28,12 @@ if [[ "$DISTRIB" == "conda" ]]; then
     conda create -n testenv --yes python=$PYTHON_VERSION pip
     source activate testenv
 
-elif [[ "$DISTRIB" == "ubuntu" ]]; then
+elif [ [ "$DISTRIB" == "ubuntu" ] ];
+then
     # Use standard ubuntu packages in their default version
 fi
 
-if [[ "$COVERAGE" == "true" ]]; then
+if [ [ "$COVERAGE" == "true" ] ];
+then
     pip install coverage coveralls
 fi
