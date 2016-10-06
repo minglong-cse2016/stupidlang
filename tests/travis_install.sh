@@ -30,6 +30,7 @@ if [[ "$DISTRIB" == "conda" ]]; then
 
 elif [ [ "$DISTRIB" == "ubuntu" ] ];
 then
+    echo Hi
     # Use standard ubuntu packages in their default version
 fi
 
